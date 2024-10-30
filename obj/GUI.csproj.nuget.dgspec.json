@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\рб\\учеба\\курс 5_мага\\1 семестр\\ТРПО\\parser\\GUI\\GUI.csproj": {}
+    "D:\\рб\\учеба\\курс_5_мага\\1_семестр\\ТРПО\\parser\\GUI\\GUI.csproj": {}
   },
   "projects": {
-    "D:\\рб\\учеба\\курс 5_мага\\1 семестр\\ТРПО\\parser\\GUI\\GUI.csproj": {
+    "D:\\рб\\учеба\\курс_5_мага\\1_семестр\\ТРПО\\parser\\GUI\\GUI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\рб\\учеба\\курс 5_мага\\1 семестр\\ТРПО\\parser\\GUI\\GUI.csproj",
+        "projectUniqueName": "D:\\рб\\учеба\\курс_5_мага\\1_семестр\\ТРПО\\parser\\GUI\\GUI.csproj",
         "projectName": "GUI",
-        "projectPath": "D:\\рб\\учеба\\курс 5_мага\\1 семестр\\ТРПО\\parser\\GUI\\GUI.csproj",
+        "projectPath": "D:\\рб\\учеба\\курс_5_мага\\1_семестр\\ТРПО\\parser\\GUI\\GUI.csproj",
         "packagesPath": "C:\\Users\\Александр\\.nuget\\packages\\",
-        "outputPath": "D:\\рб\\учеба\\курс 5_мага\\1 семестр\\ТРПО\\parser\\GUI\\obj\\",
+        "outputPath": "D:\\рб\\учеба\\курс_5_мага\\1_семестр\\ТРПО\\parser\\GUI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Александр\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -44,6 +44,12 @@
       "frameworks": {
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
+          "dependencies": {
+            "FontAwesome5": {
+              "target": "Package",
+              "version": "[2.1.11, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

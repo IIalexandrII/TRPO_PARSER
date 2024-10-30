@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Y+EA6R3F/7kSQUul/hSvH4cMKqdvQ0sTNRM7s6h+no8xkAGMnlCRzCiLvQGywByoZBfzg2wriPetTB7cGw/lEQ==",
+  "dgSpecHash": "oEh8aYLB8dRjecVWcBTESWX+wE+g8Ii1lz4diaAW76KhsA1RY7OfmE/1fvTQNefcBEilSdj6qxZAiphaDWwPzA==",
   "success": true,
-  "projectFilePath": "D:\\рб\\учеба\\курс 5_мага\\1 семестр\\ТРПО\\parser\\GUI\\GUI.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "D:\\рб\\учеба\\курс_5_мага\\1_семестр\\ТРПО\\parser\\GUI\\GUI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Александр\\.nuget\\packages\\fontawesome5\\2.1.11\\fontawesome5.2.1.11.nupkg.sha512"
+  ],
   "logs": []
 }
