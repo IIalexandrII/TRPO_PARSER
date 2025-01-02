@@ -27,7 +27,11 @@
         "frameworks": {
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\рб\\учеба\\курс_5_мага\\1_семестр\\ТРПО\\parser\\MyParser\\MyParser.csproj": {
+                "projectPath": "D:\\рб\\учеба\\курс_5_мага\\1_семестр\\ТРПО\\parser\\MyParser\\MyParser.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -45,6 +49,10 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "dependencies": {
+            "Antlr4.Runtime.Standard": {
+              "target": "Package",
+              "version": "[4.13.1, )"
+            },
             "FontAwesome5": {
               "target": "Package",
               "version": "[2.1.11, )"
@@ -71,6 +79,21 @@
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
+      }
+    },
+    "D:\\рб\\учеба\\курс_5_мага\\1_семестр\\ТРПО\\parser\\MyParser\\MyParser.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\рб\\учеба\\курс_5_мага\\1_семестр\\ТРПО\\parser\\MyParser\\MyParser.csproj",
+        "projectName": "MyParser",
+        "projectPath": "D:\\рб\\учеба\\курс_5_мага\\1_семестр\\ТРПО\\parser\\MyParser\\MyParser.csproj",
+        "frameworks": {
+          "net48": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {}
       }
     }
   }

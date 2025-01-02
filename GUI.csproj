@@ -7,7 +7,9 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <UseWPF>true</UseWPF>
   </PropertyGroup>
+	
 
+	
   <ItemGroup>
     <EmbeddedResource Remove="Properties\Resources.resx" />
   </ItemGroup>
@@ -18,7 +20,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Antlr4.Runtime.Standard" Version="4.13.1" />
     <PackageReference Include="FontAwesome5" Version="2.1.11" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MyParser\MyParser.csproj" />
   </ItemGroup>
 
   <ItemGroup>

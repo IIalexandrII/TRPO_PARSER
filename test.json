@@ -1,0 +1,129 @@
+{
+  "nodes": [
+    {
+      "id": "A",
+      "next": [
+        {
+          "nId": "B",
+          "step": [ "startWords" ]
+        }
+      ],
+      "tag": "start"
+    },
+    {
+      "id": "B",
+      "next": [
+        {
+          "nId": "C",
+          "step": [ "openBracket" ]
+        }
+      ],
+      "tag": "node"
+    },
+    {
+      "id": "C",
+      "next": [
+        {
+          "nId": "D",
+          "step": [ "quoteMark" ]
+        },
+        {
+          "nId": "H",
+          "step": [ "L" ]
+        },
+        {
+          "nId": "C",
+          "step": [ "space" ]
+        }
+      ],
+      "tag": "node"
+    },
+    {
+      "id": "D",
+      "next": [
+        {
+          "nId": "E",
+          "step": [ "L", "flags" , "space", "comma"]
+        }
+      ],
+      "tag": "node"
+    },
+    {
+      "id": "E",
+      "next": [
+        {
+          "nId": "E",
+          "step": [ "space", "comma", "L", "flags" ]
+        },
+        {
+          "nId": "F",
+          "step": [ "quoteMarkComma" ]
+        }
+      ],
+      "tag": "node"
+    },
+
+    {
+      "id": "F",
+      "next": [
+        {
+          "nId": "G",
+          "step": [ "L" ]
+        },
+        {
+          "nId": "F",
+          "step": [ "space" ]
+        }
+      ],
+      "tag": "node"
+    },
+    {
+      "id": "G",
+      "next": [
+        {
+          "nId": "F",
+          "step": [ "comma" ]
+        },
+        {
+          "nId": "G",
+          "step": [ "space" ]
+        },
+        {
+          "nId": "I",
+          "step": [ "end" ]
+        }
+      ],
+      "tag": "node"
+    },
+    {
+      "id": "I",
+      "next": [],
+      "tag": "end"
+    },
+    {
+      "id": "H",
+      "next": [
+        {
+          "nId": "I",
+          "step": [ "end" ]
+        },
+        {
+          "nId": "H",
+          "step": [ "space" ]
+        }
+      ],
+      "tag": "node"
+    }
+  ],
+  "dictionaries": {
+    "startWords": [ "printf" ],
+    "openBracket": ["("],
+    "L": [ "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z" ],
+    "flags": [ "%d", "%s", "%e", "%x", "%f" ],
+    "comma": [ "," ],
+    "space": [ " " ],
+    "quoteMark": [ "\"" ],
+    "quoteMarkComma": [ "\"," ],
+    "end": [ ");" ]
+  }
+}

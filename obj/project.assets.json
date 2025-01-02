@@ -2,6 +2,19 @@
   "version": 3,
   "targets": {
     "net8.0-windows7.0": {
+      "Antlr4.Runtime.Standard/4.13.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Antlr4.Runtime.Standard.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Antlr4.Runtime.Standard.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "FontAwesome5/2.1.11": {
         "type": "package",
         "compile": {
@@ -20,10 +33,34 @@
             "related": ".Net.xml;.xml"
           }
         }
+      },
+      "MyParser/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/MyParser.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MyParser.dll": {}
+        }
       }
     }
   },
   "libraries": {
+    "Antlr4.Runtime.Standard/4.13.1": {
+      "sha512": "Da5+i4kFHUseJRZGcBG5fmZGpA/Ns180ibrQMxgZzjpQOnENVvSL5gi5HZ8Ncz8/AR2WsKbOg2lMBzjz0HUQcA==",
+      "type": "package",
+      "path": "antlr4.runtime.standard/4.13.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "antlr4.runtime.standard.4.13.1.nupkg.sha512",
+        "antlr4.runtime.standard.nuspec",
+        "lib/net45/Antlr4.Runtime.Standard.dll",
+        "lib/net45/Antlr4.Runtime.Standard.xml",
+        "lib/netstandard2.0/Antlr4.Runtime.Standard.dll",
+        "lib/netstandard2.0/Antlr4.Runtime.Standard.xml"
+      ]
+    },
     "FontAwesome5/2.1.11": {
       "sha512": "OGwy+ZJoJR7U71eA3BenwP7rdVviVYp8p6ptdBEhoMRuRsSV4vGM/LypVBhonBI43WSxXBysSoE5uQ2SkYKNvA==",
       "type": "package",
@@ -75,11 +112,18 @@
         "lib/uap10.0/FontAwesome5.dll",
         "lib/uap10.0/FontAwesome5.xml"
       ]
+    },
+    "MyParser/1.0.0": {
+      "type": "project",
+      "path": "../MyParser/MyParser.csproj",
+      "msbuildProject": "../MyParser/MyParser.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0-windows7.0": [
-      "FontAwesome5 >= 2.1.11"
+      "Antlr4.Runtime.Standard >= 4.13.1",
+      "FontAwesome5 >= 2.1.11",
+      "MyParser >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -108,7 +152,11 @@
       "frameworks": {
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\рб\\учеба\\курс_5_мага\\1_семестр\\ТРПО\\parser\\MyParser\\MyParser.csproj": {
+              "projectPath": "D:\\рб\\учеба\\курс_5_мага\\1_семестр\\ТРПО\\parser\\MyParser\\MyParser.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -126,6 +174,10 @@
       "net8.0-windows7.0": {
         "targetAlias": "net8.0-windows",
         "dependencies": {
+          "Antlr4.Runtime.Standard": {
+            "target": "Package",
+            "version": "[4.13.1, )"
+          },
           "FontAwesome5": {
             "target": "Package",
             "version": "[2.1.11, )"

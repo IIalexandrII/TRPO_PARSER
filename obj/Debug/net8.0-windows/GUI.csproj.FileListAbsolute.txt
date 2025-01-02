@@ -45,3 +45,8 @@ D:\рб\учеба\курс_5_мага\1_семестр\ТРПО\parser\GUI\obj\
 D:\рб\учеба\курс_5_мага\1_семестр\ТРПО\parser\GUI\obj\Debug\net8.0-windows\GUI.pdb
 D:\рб\учеба\курс_5_мага\1_семестр\ТРПО\parser\GUI\obj\Debug\net8.0-windows\GUI.genruntimeconfig.cache
 D:\рб\учеба\курс_5_мага\1_семестр\ТРПО\parser\GUI\obj\Debug\net8.0-windows\ref\GUI.dll
+D:\рб\учеба\курс_5_мага\1_семестр\ТРПО\parser\GUI\bin\Debug\net8.0-windows\MyParser.dll
+D:\рб\учеба\курс_5_мага\1_семестр\ТРПО\parser\GUI\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
+D:\рб\учеба\курс_5_мага\1_семестр\ТРПО\parser\GUI\bin\Debug\net8.0-windows\MyParser.pdb
+D:\рб\учеба\курс_5_мага\1_семестр\ТРПО\parser\GUI\bin\Debug\net8.0-windows\Newtonsoft.Json.xml
+D:\рб\учеба\курс_5_мага\1_семестр\ТРПО\parser\GUI\bin\Debug\net8.0-windows\Antlr4.Runtime.Standard.dll

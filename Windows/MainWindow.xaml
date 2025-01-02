@@ -15,31 +15,25 @@
     <DockPanel>
         <Menu DockPanel.Dock="Top">
             <MenuItem Header="Файл">
-                <MenuItem Header="Открыть"/>
-                <MenuItem Header="Сохранить"/>
-                <MenuItem Header="Сохранить как"/>
+                <MenuItem Header="Открыть" Command="{Binding OpenFileCommand}"/>
+                <MenuItem Header="Сохранить" Command="{Binding SaveFileCommand}"/>
+                <MenuItem Header="Сохранить как" Command="{Binding SaveAsFileCommand}"/>
                 <MenuItem Header="Выход" Command="{Binding CloseAppCommand}"/>
             </MenuItem>
-            <MenuItem Header="Текст">
-                <MenuItem Header="Введение"/>
-                <MenuItem Header="Грамматика"/>
-                <MenuItem Header="Классификаторы"/>
-                <MenuItem Header="Методы"/>
-                <MenuItem Header="Тесты"/>
-                <MenuItem Header="Вывод"/>
-                <MenuItem Header="Листинг"/>
-            </MenuItem>
             <MenuItem Header="Настройки">
-                <MenuItem Header="Грамматика"/>
+                <MenuItem Header="Грамматика" Command="{Binding LoadGrammerCommand}"/>
             </MenuItem>
-            <MenuItem Header="О программе"></MenuItem>
+            <MenuItem Header="О программе" Command="{Binding ShowAboutProgrammCommand}"></MenuItem>
         </Menu>
         <StatusBar DockPanel.Dock="Bottom">
             <StatusBarItem>
                 <TextBlock Text="Прогрес: "/>
             </StatusBarItem>
             <StatusBarItem>
-                <ProgressBar Width="150" Height="14" Value="50"/>
+                <ProgressBar Width="150" Height="14" Value="{Binding Progres}"/>
+            </StatusBarItem>
+            <StatusBarItem>
+                <TextBlock Text="{Binding GrammerText}" HorizontalAlignment="Right"/>
             </StatusBarItem>
         </StatusBar>
         <Grid>
@@ -73,10 +67,10 @@
             </Border>
 
             <Border Grid.Row="1" Margin="5,1,5,1" BorderBrush="DimGray" BorderThickness="1,0,1,1" CornerRadius="1">
-                <TextBox AcceptsReturn="True" TextWrapping="Wrap" 
+                <TextBox AcceptsReturn="True" TextWrapping="Wrap"
                          FontFamily="Consolas" FontSize="16" 
                          ScrollViewer.HorizontalScrollBarVisibility="Auto" 
-                         Text="{Binding InputStringForParser}">
+                         Text="{Binding InputStringForParser, UpdateSourceTrigger=PropertyChanged}">
                     <Validation.ErrorTemplate>
                         <ControlTemplate />
                     </Validation.ErrorTemplate>
